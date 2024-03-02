@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
-path = 'C:/Users/Wstr35/Desktop/hram_mobile/parser_for_schedule/pngg/image.jpg'
+path = 'pngg/image.jpg'
 
 
 def get_fake_user_agent():
