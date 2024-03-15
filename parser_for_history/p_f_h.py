@@ -59,7 +59,7 @@ async def parse_html(url):
         else:
             print("Chrome запущен в обычном режиме с интерфейсом.")
 
-        sleep(5)
+        await asyncio.sleep(5)
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         li_obj = soup.find_all('li',
                                class_='js-feed-post t-feed__post t-item t-width t-feed__grid-col t-col t-col_3 t-align_left')
