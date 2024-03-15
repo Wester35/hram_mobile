@@ -49,7 +49,6 @@ async def parse_html(url):
     driver = webdriver.Chrome(options=options)
 
     try:
-        # Устанавливаем User-Agent
         user_agent = get_fake_user_agent()
         driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": user_agent})
 
